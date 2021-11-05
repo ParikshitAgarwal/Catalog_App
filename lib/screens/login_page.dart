@@ -11,8 +11,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  String name = "";
   bool changeBtn = false;
+  String name = "";
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           Text(
             "Welcome $name",
-            style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 32),
@@ -39,8 +39,9 @@ class _LoginPageState extends State<LoginPage> {
                     labelText: "Username",
                   ),
                   onChanged: (value) {
-                    name = value;
-                    setState(() {});
+                    setState(() {
+                      name = value;
+                    });
                   },
                 ),
                 TextFormField(
@@ -58,38 +59,31 @@ class _LoginPageState extends State<LoginPage> {
           ),
           InkWell(
             onTap: () async {
-              // ignore: avoid_print
               setState(() {
                 changeBtn = true;
               });
-              await Future.delayed(const Duration(seconds: 1));
+              await Future.delayed(Duration(seconds: 1));
               Navigator.pushNamed(context, MyRoutes.homeRoute);
             },
             child: AnimatedContainer(
-              height: 40,
-              width: changeBtn ? 40 : 150,
-              alignment: Alignment.center,
               duration: const Duration(seconds: 1),
-              decoration: BoxDecoration(
-                color: Colors.deepPurple,
-                borderRadius: changeBtn
-                    ? BorderRadius.circular(40)
-                    : BorderRadius.circular(8),
-              ),
+              height: 50,
+              width: changeBtn ? 50 : 150,
               child: changeBtn
                   ? const Icon(Icons.done)
                   : const Text(
                       "Login",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
+              decoration: BoxDecoration(
+                color: Colors.deepPurple,
+                borderRadius: BorderRadius.circular(changeBtn ? 50 : 8),
+              ),
+              alignment: Alignment.center,
             ),
-          )
+          ),
           // ElevatedButton(
           //     onPressed: () {
-          //       Navigator.pushNamed(context, MyRoutes.homeRoute);
           //       print("pressed");
           //     },
           //     child: Text("Login"))
