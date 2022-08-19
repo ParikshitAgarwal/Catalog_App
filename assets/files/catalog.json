@@ -1,0 +1,71 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "name": "Kingston 240gb SSD",
+            "model": "A400",
+            "price": 4000,
+            "desc": "2.6 SATA",
+            "image": "https://taipeicomputer.jo/image/cache/catalog/Products/Storage/SSD/A400_240-1200x1200.jpg"
+
+        },
+        {
+            "id":2,
+            "name":"Adata 240gb SSD",
+            "model":"SU650",
+            "price": 6999,
+            "desc":"M.2 2280 SATA 6Gb/s SSD",
+            "image": "https://webapi3.adata.com/storage/ProductGallery/productGallery6098.jpg"
+
+        },
+        {
+            "id":3,
+            "name":"Adata 240gb SSd",
+            "model":"SU630",
+            "price": 6999,
+            "desc": "2.5 SATA 6Gb/s",
+            "image": "https://webapi3.adata.com/storage/ProductGallery/productGallery7325.jpg"
+
+        },
+        {
+            "id":4,
+            "name":"Crucial 250gb SSD",
+            "model":"P2",
+            "price": 6400,
+            "desc": "NVMe M.2",
+            "image": "https://media.ldlc.com/r1600/ld/products/00/05/64/83/LD0005648319_2.jpg"
+
+        },
+        {
+            "id":5,
+            "name":"Samsung 250gb SSD",
+            "model":"970 EVO Plus",
+            "price": 7049,
+            "desc": "NVMe M.2",
+            "image": "https://images.samsung.com/is/image/samsung/in-970-evoplus-nvme-m2-ssd-mz-v7s250bw-pkgfrontblack-142279037?$684_547_PNG$"
+
+        },
+        {
+            "id":6,
+            "name":"Patriot 256gb SSD",
+            "model":"P300",
+            "price": 6999,
+            "desc":"M.2 PCIe Gen3 v4",
+            "image": "https://sps24.eu/eng_pl_PATRIOT-P300-M-2-PCI-EX4-NVME-256GB-16748_1.jpg"
+
+        },
+        {
+            "id":7,
+            "name":"XPG 256gb SSD",
+            "model":"SX6000 Lite",
+            "price": 8999,
+            "desc": "M.2 2280 PCIe Gen4v4 SSD",
+            "image": "https://webapi3.adata.com/storage/ProductGallery/productGallery66.png"
+
+        }
+        
+
+
+
+    ]
+}
